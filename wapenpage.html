@@ -1,0 +1,138 @@
+[13:43, 16/03/2026] +91 8077 834 606: <!DOCTYPE html>
+<html>
+<head>
+<title>Weapons</title>
+
+<style>
+ body{
+margin:0;
+font-family:Arial;
+background:#0a0a0a;
+color:white;
+text-align:center;
+} 
+ body{
+margin:0;
+font-family:Arial;
+background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+url('https://plus.unsplash.com/premium_photo-1682097238346-3f2a677ccfe6?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Y2FsbCUyMG9mJTIwZHV0eXxlbnwwfHwwfHx8MA%3D%3D');   /* yaha apni image ka path daal sakti ho */
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
+color:white;
+text-align:center;
+}
+
+nav{
+background:#111;
+padding:15px;
+}
+
+nav a{
+color:white;
+margin:20px;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav a:hover{color:#f4c542;}
+
+.container{
+display:flex;
+flex-direction:column;
+align-items:center;
+margin-top:40px;
+padding-bottom:120px;
+}
+
+.weapon{
+background:#1a1a1a;
+width:60%;
+max-width:700px;
+margin:20px;
+padding:20px;
+border-radius:10px;
+transition:0.3s;
+cursor:pointer;
+}
+
+.weapon img{
+width:100%;
+/* height:180px; */
+object-fit:cover;
+border-radius:10px;
+}
+
+.weapon:hover{
+transform:translateY(-10px);
+box-shadow:0 0 20px #f4c542;
+}
+
+footer{
+background:#111;
+padding:20px;
+text-align:center;
+position:fixed;   
+bottom:0;         
+width:100%;       
+}
+
+.myname{
+font-weight:bold;
+animation:colorChange 3s infinite alternate;
+}
+
+@keyframes colorChange{
+0%{color:#f4c542;}
+50%{color:white;}
+100%{color:#ff4c4c;}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<a href="gamemodel.html">Home</a>
+<a href="aboutpage.html">About</a>
+<a href="mode.html">Modes</a>
+<a href="wapenpage.html">Weapons</a>
+<a href="character.html">Characters</a>
+</nav>
+
+<h1>Weapons Arsenal</h1>
+
+<div class="container">
+
+<div class="weapon">
+<img src="https://d1lss44hh2trtw.cloudfront.net/resize?type=webp&url=https%3A%2F%2Fshacknews-www.s3.amazonaws.com%2Fassets%2Feditorial%2F2025%2F10%2Fcall-of-duty-black-ops-6-m15-mod-0-assault-rifle.jpg&width=986&sign=B37Qtv0N9ovlt6wrG9n-oszJkrbyz_c613sVVpDi8nE" alt="Assault Rifle">
+<h3>Assault Rifle</h3>
+<p>Balanced weapon for mid-range combat.</p>
+</div>
+
+<div class="weapon">
+<img src="https://ik.imagekit.io/0eqydxstn/Pelington_703_QuaSOZus3.jpg" alt="Sniper Rifle">
+<h3>Sniper Rifle</h3>
+<p>High damage long-range weapon.</p>
+</div>
+
+<div class="weapon">
+<img src="https://assetsio.gnwcdn.com/marine-sp.jpg?width=690&quality=85&format=jpg&dpr=3&auto=webp" alt="Shotgun">
+<h3>Shotgun</h3>
+<p>Deadly in close-range battles.</p>
+</div>
+
+<div class="weapon">
+<img src="https://bnetcmsus-a.akamaihd.net/cms/content_folder_media/NQCNTIKNUSTY1587425887442.jpg" alt="Pistol">
+<h3>Pistol</h3>
+<p>Compact and fast secondary weapon.</p>
+</div>
+
+</div>
+
+<footer>
+@ 2026 Project | Made by <span class="myname">Prachi Choudhary</span>
+</footer>
+
+</body>
+</html>

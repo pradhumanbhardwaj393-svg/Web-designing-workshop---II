@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>About - Call of Duty</title>
+
+<style>
+body{
+margin:0;
+font-family:Arial;
+background:#0a0a0a;
+color:white;
+}
+
+nav{
+background:#111;
+padding:15px;
+text-align:center;
+}
+
+nav a{
+color:white;
+margin:20px;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav a:hover{
+color:#f4c542;
+}
+
+.hero{
+height:60vh;
+background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+url('https://images.wallpapersden.com/image/download/call-of-duty-blackout_a2xobm2UmZqaraWkpJRnaWllrWZlbWU.jpg');
+background-size:contain;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+.hero h1{
+font-size:50px;
+letter-spacing:4px;
+}
+
+.section{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+align-items:center;
+padding:50px 20px;
+}
+
+.section img{
+width:400px;
+max-width:90%;
+border-radius:10px;
+margin:20px;
+}
+
+.text{
+max-width:500px;
+margin:20px;
+}
+
+.text h2{
+color:#f4c542;
+}
+
+.timeline{
+background:#111;
+padding:50px 20px;
+text-align:center;
+}
+
+.year-box{
+background:#1a1a1a;
+margin:20px auto;
+padding:20px;
+width:60%;
+border-radius:10px;
+transition:0.3s;
+}
+
+.year-box:hover{
+box-shadow:0 0 20px #b0f442;
+transform:scale(1.03);
+}
+
+footer{
+background:#111;
+padding:20px;
+text-align:center;
+position:fixed;   
+bottom:0;         
+width:100%;       
+}
+
+.myname{
+color:#f4c542;
+font-weight:bold;
+position:relative;
+animation:colorChange 3s infinite alternate;
+}
+
+@keyframes colorChange{
+0%{color:#f4c542;}
+50%{color:white;}
+100%{color:#ff4c4c;}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<a href="gamemodel.html">Home</a>
+<a href="aboutpage.html">About</a>
+<a href="mode.html">Modes</a>
+<a href="wapenpage.html">Weapons</a>
+<a href="character.html">Characters</a>
+</nav>
+
+<div class="hero">
+<h1>About The Game</h1>
+</div>
+
+<div class="section">
+<img src="https://scx2.b-cdn.net/gfx/news/hires/2013/realisticwar.jpg" alt="Game Image">
+<div class="text">
+<h2>Realistic Warfare</h2>
+<p>Call of Duty is one of the most popular first-person shooter game series in the world. It is known for realistic war environments, powerful weapons and intense missions.</p>
+</div>
+</div>
+
+<div class="section">
+<div class="text">
+<h2>Global Popularity</h2>
+<p>The game features multiplayer battles, campaign missions and battle royale mode. Millions of players compete online daily.</p>
+</div>
+<img src="https://img.decrypt.co/insecure/rs:fit:3840:0:0:0/plain/https://cdn.decrypt.co/wp-content/uploads/2024/05/COD-UNREDACTED-004-gID_7.jpg@webp" alt="Game Mode">
+</div>
+
+<div class="timeline">
+<h2>Game Evolution</h2>
+
+<div class="year-box">
+<h3>2003</h3>
+<p>First Call of Duty game released.</p>
+</div>
+
+<div class="year-box">
+<h3>2019</h3>
+<p>Modern Warfare reboot launched.</p>
+</div>
+
+<div class="year-box">
+<h3>2020</h3>
+<p>Battle Royale Warzone introduced.</p>
+</div>
+
+</div>
+
+<footer>
+@ 2026 Project | Made by <span class="myname">Prachi Choudhary</span>
+</footer>
+
+</body>
+</html>

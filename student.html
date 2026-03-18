@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+<title>Student Result Calculator</title>
+
+<style>
+
+body{
+font-family:Arial;
+background:linear-gradient(135deg,#89f7fe,#66a6ff);
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.container{
+background:white;
+padding:30px;
+border-radius:12px;
+width:350px;
+text-align:center;
+box-shadow:0 10px 20px rgba(0,0,0,0.2);
+}
+
+input{
+width:90%;
+padding:10px;
+margin:6px;
+border-radius:6px;
+border:1px solid gray;
+}
+
+button{
+padding:10px 15px;
+border:none;
+border-radius:8px;
+background:#4facfe;
+color:white;
+font-weight:bold;
+cursor:pointer;
+}
+
+button:hover{
+background:#00c6ff;
+}
+
+#result{
+margin-top:15px;
+font-weight:bold;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Student Result Calculator</h2>
+
+<input type="text" id="name" placeholder="Student Name">
+<input type="number" id="subjects" placeholder="Number of Subjects">
+
+<button onclick="enterMarks()">Enter Marks</button>
+
+<button onclick="calculateResult()">Calculate Result</button>
+
+<div id="result"></div>
+
+</div>
+
+<script>
+
+let marks=[];
+
+function enterMarks(){
+
+marks=[];
+
+let subjects=document.getElementById("subjects").value;
+
+for(let i=1;i<=subjects;i++){
+
+let mark=prompt("Enter marks for subject "+i);
+
+marks.push(Number(mark));
+
+}
+
+}
+
+function calculateResult(){
+
+let total=0;
+
+for(let m of marks){
+total+=m;
+}
+
+let avg=total/marks.length;
+
+let grade="";
+let result="";
+
+if(avg>=90) grade="A";
+else if(avg>=75) grade="B";
+else if(avg>=60) grade="C";
+else if(avg>=40) grade="D";
+else grade="F";
+
+result = avg>=40 ? "PASS" : "FAIL";
+
+document.getElementById("result").innerHTML=
+
+"Total Marks: "+total+"<br>"+
+"Average Marks: "+avg.toFixed(2)+"<br>"+
+"Grade: "+grade+"<br>"+
+"Result: "+result;
+
+alert("Now enter details for next student");
+
+document.getElementById("name").value="";
+document.getElementById("subjects").value="";
+
+}
+
+</script>
+
+</body>
+</html>

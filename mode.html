@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Game Modes</title>
+
+<style>
+body{
+margin:0;
+font-family:Arial;
+background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+url('https://t4.ftcdn.net/jpg/05/68/60/33/360_F_568603373_myYg5WDPyja669cX4gMLRO7FdxxhbPtS.jpg');   /* yaha apni image ka path daal sakti ho */
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
+color:white;
+text-align:center;
+}
+
+nav{
+background:#111;
+padding:15px;
+}
+
+nav a{
+color:white;
+margin:20px;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav a:hover{
+color:#f4c542;
+}
+
+.container{
+display:flex;
+flex-direction:column;
+align-items:center;
+margin-top:40px;
+padding-bottom:120px;
+}
+
+.mode{
+background:#1a1a1a;
+width:70%;
+max-width:800px;
+margin:25px;
+padding:20px;
+border-radius:10px;
+transition:0.3s;
+cursor:pointer;
+}
+
+.mode img{
+width:100%;
+height:auto;   /* height fix mat karo */
+border-radius:10px;
+}
+
+.mode:hover{
+transform:translateY(-8px);
+box-shadow:0 0 20px #f4c542;
+}
+
+footer{
+background:#111;
+padding:20px;
+text-align:center;
+position:fixed;   
+bottom:0;         
+width:100%;       
+}
+
+.myname{
+font-weight:bold;
+animation:colorChange 3s infinite alternate;
+}
+
+@keyframes colorChange{
+0%{color:#f4c542;}
+50%{color:white;}
+100%{color:#ff4c4c;}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<a href="gamemodel.html">Home</a>
+<a href="aboutpage.html">About</a>
+<a href="mode.html">Modes</a>
+<a href="wapenpage.html">Weapons</a>
+<a href="character.html">Characters</a>
+</nav>
+
+<h1>Game Modes</h1>
+
+<div class="container">
+
+<div class="mode">
+<img src="https://i.ytimg.com/vi/9z8yMIMn3fI/maxresdefault.jpg">
+<h2>Multiplayer Mode</h2>
+<p>Compete online with players worldwide in intense battles.</p>
+</div>
+
+<div class="mode">
+<img src="https://bnetcmsus-a.akamaihd.net/cms/gallery/HNP0TIUILKJH1668450306268.jpg" alt="Battle Royale">
+<h2>Battle Royale</h2>
+<p>Survive till the end in a massive open battlefield.</p>
+</div>
+
+<div class="mode">
+<img src="https://insider-gaming.com/wp-content/uploads/2023/11/world-at-war-zombies-order-of-release-1024x576.jpeg" alt="Zombie Mode">
+<h2>Zombie Mode</h2>
+<p>Fight against waves of dangerous zombies.</p>
+</div>
+
+<div class="mode">
+<img src="https://i.ytimg.com/vi/zu3wZ-_IKrM/maxresdefault.jpg" alt="Campaign">
+<h2>Campaign Mode</h2>
+<p>Experience a story-driven war mission journey.</p>
+</div>
+
+</div>
+
+<footer>
+@ 2026 Project | Made by <span class="myname">Prachi Choudhary</span>
+</footer>
+
+</body>
+</html>

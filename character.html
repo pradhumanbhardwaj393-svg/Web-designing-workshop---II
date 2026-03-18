@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Page</title>
+    <style>
+ body{
+margin:0;
+font-family:Arial;
+background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+url('https://wallpaper-house.com/data/out/8/wallpaper2you_288516.jpg');   /* yaha apni image ka path daal sakti ho */
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
+color:white;
+text-align:center;
+}
+
+nav{
+background:#111;
+padding:15px;
+}
+
+nav a{
+color:white;
+margin:20px;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav a:hover{
+color:#f4c542;
+}
+
+h1{
+margin-top:30px;
+}
+
+.characters{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+margin-top:40px;
+}
+
+.card{
+background:#1a1a1a;
+width:250px;
+margin:20px;
+padding:20px;
+border-radius:10px;
+transition:0.4s;
+cursor:pointer;
+}
+
+.card img{
+width:100%;
+border-radius:10px;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 20px #f4c542;
+}
+
+button{
+margin-top:10px;
+padding:8px 15px;
+background:#f4c542;
+border:none;
+font-weight:bold;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+background:white;
+box-shadow:0 0 15px #f4c542;
+}
+
+footer{
+background:#111;
+padding:20px;
+margin-top:40px;
+}
+
+.myname{
+font-weight:bold;
+animation:colorChange 3s infinite alternate;
+}
+
+@keyframes colorChange{
+0%{color:#f4c542;}
+50%{color:white;}
+100%{color:#ff4c4c;}
+}
+</style>
+</head>
+<body>
+    <nav>
+<a href="gamemodel.html">Home</a>
+<a href="aboutpage.html">About</a>
+<a href="mode.html">Modes</a>
+<a href="wapenpage.html">Weapons</a>
+<a href="character.html">Characters</a>
+</nav>
+    <h1>Choose Your Character</h1>
+
+    <div class="characters">
+
+<div class="card">
+<img src="https://w0.peakpx.com/wallpaper/878/820/HD-wallpaper-ghost-duty-price-call-soup.jpg">
+<h3>Captain Ghost</h3>
+<p>Expert in stealth and tactical combat.</p>
+<button>Select</button>
+</div>
+
+<div class="card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ46EhpxSXD9J-oBfqIAy0HijwhaQN5Wm_iA&s">
+<h3>Sergeant Blaze</h3>
+<p>Heavy weapons specialist and frontline fighter.</p>
+<button>Select</button>
+</div>
+
+<div class="card">
+<img src="https://gaming-cdn.com/images/news/articles/11866/cover/two-more-call-of-duty-and-tony-hawk-s-pro-skater-1-2-could-be-coming-soon-to-game-pass-cover67f8e16150524.jpg">
+<h3>Sniper Hawker</h3>
+<p>Long-range sniper with deadly accuracy.</p>
+<button>Select</button>
+</div>
+    
+</div>
+
+<footer>
+© 2026 COD Project | Made by <span class="myname">Prachi Choudhary</span>
+</footer>
+</body>
+</html>

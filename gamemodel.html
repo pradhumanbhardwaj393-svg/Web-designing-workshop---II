@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Call of Duty - Home</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial, sans-serif;
+background:#0a0a0a;
+color:white;
+}
+
+nav{
+position:fixed;
+width:100%;
+top:0;
+background:rgba(0,0,0,0.8);
+padding:15px;
+text-align:center;
+z-index:1000;
+}
+
+nav a{
+color:white;
+margin:20px;
+text-decoration:none;
+font-weight:bold;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#f4c542;
+letter-spacing:2px;
+}
+
+.hero{
+height:100vh;
+background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+url('https://assets.gqindia.com/photos/5d933f025d883c0008e2df1b/master/pass/call%20of%20duty.jpg');
+background-size:contain;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+text-align:center;
+}
+
+.hero h1{
+font-size:70px;
+letter-spacing:6px;
+color:#f4c542;
+animation:glow 2s infinite alternate;
+}
+
+@keyframes glow{
+from{text-shadow:0 0 10px #f4c542;}
+to{text-shadow:0 0 30px white;}
+}
+
+.hero p{
+margin-top:20px;
+font-size:20px;
+}
+
+.btn{
+margin-top:30px;
+padding:12px 30px;
+background:#f4c542;
+border:none;
+font-weight:bold;
+cursor:pointer;
+transition:0.3s;
+}
+
+.btn:hover{
+background:white;
+box-shadow:0 0 20px #f4c542;
+}
+
+.features{
+padding:80px 20px;
+text-align:center;
+}
+
+.cards{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.card{
+background:#1a1a1a;
+width:300px;
+margin:20px;
+padding:20px;
+border-radius:10px;
+transition:0.3s;
+}
+
+.card img{
+width:100%;
+height:320px;   
+object-fit:cover;
+border-radius:10px;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 20px #f4c542;
+}
+
+footer{
+background:#111;
+padding:20px;
+text-align:center;
+position:fixed;   
+bottom:0;         
+width:100%;       
+}
+
+.myname{
+font-weight:bold;
+animation:colorChange 3s infinite alternate;
+}
+
+@keyframes colorChange{
+0%{color:#f4c542;}
+50%{color:white;}
+100%{color:#ff4c4c;}
+}
+</style>
+
+</head>
+<body>
+
+<nav>
+<a href="gamemodel.html">Home</a>
+<a href="aboutpage.html">About</a>
+<a href="mode.html">Modes</a>
+<a href="wapenpage.html">Weapons</a>
+<a href="character.html">Characters</a>
+</nav>
+
+<div class="hero">
+<h1>CALL OF DUTY</h1>
+<p>Step into the battlefield and dominate the war zone.</p>
+<a href="call_of_duty_modes_page.html"><button class="btn">Start Mission</button></a>
+</div>
+
+<section class="features">
+
+<h2>Game Highlights</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="https://i.ytimg.com/vi/9z8yMIMn3fI/maxresdefault.jpg" alt="">
+<h3>Multiplayer Battles</h3>
+<p>Compete with players worldwide in intense online matches.</p>
+</div>
+
+<div class="card">
+<img src="https://bnetcmsus-a.akamaihd.net/cms/gallery/HNP0TIUILKJH1668450306268.jpg" alt="">
+<h3>Battle Royale</h3>
+<p>Survive till the end in large-scale war zones.</p>
+</div>
+
+<div class="card">
+<img src="https://insider-gaming.com/wp-content/uploads/2023/11/world-at-war-zombies-order-of-release-1024x576.jpeg" alt="">
+<h3>Zombie Mode</h3>
+<p>Fight against waves of dangerous undead enemies.</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+@ 2026 Project | Made by <span class="myname">Prachi Choudhary</span>
+</footer>
+
+</body>
+</html>
