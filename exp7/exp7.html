@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Information</title>
+
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 30px;
+            font-weight: bold;
+        }
+
+        .card {
+            background: white;
+            width: 70%;
+            max-width: 700px;
+            margin: 30px auto;
+            padding: 50px 20px;
+            border-radius: 25px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .card h2 {
+            font-size: 42px;
+            color: #0d2c54;
+            margin-bottom: 25px;
+        }
+
+        .card p {
+            font-size: 22px;
+            margin: 18px 0;
+            color: #222;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        function StudentCard(props) {
+            return (
+                <div className="card">
+                    <h2>{props.name}</h2>
+                    <p>Course: {props.course}</p>
+                    <p>Marks: {props.marks}</p>
+                </div>
+            );
+        }
+
+        function App() {
+            return (
+                <div className="container">
+                    <h1>Student Information</h1>
+
+                    <StudentCard
+                        name="Rahul Sharma"
+                        course="Computer Science"
+                        marks="85"
+                    />
+
+                    <StudentCard
+                        name="Anita Verma"
+                        course="Information Technology"
+                        marks="92"
+                    />
+
+                    <StudentCard
+                        name="Rohan Gupta"
+                        course="Electronics"
+                        marks="78"
+                    />
+                </div>
+            );
+        }
+
+        ReactDOM.render(<App />, document.getElementById("root"));
+    </script>
+</body>
+
+</html>
