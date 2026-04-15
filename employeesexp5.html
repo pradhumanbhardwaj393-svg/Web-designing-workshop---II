@@ -17,14 +17,12 @@ height:100vh;
 display:flex;
 justify-content:center;
 align-items:center;
-
-/* Background Image */
-background-image:url("https://images.unsplash.com/photo-1508780709619-79562169bc64");
+background-image:url(employees.webp);
 background-size:cover;
 background-position:center;
 }
 
-/* Glass Card */
+
 .container{
 width:370px;
 padding:30px;
@@ -33,7 +31,7 @@ background:rgba(255,255,255,0.2);
 backdrop-filter:blur(10px);
 box-shadow:0 8px 20px rgba(0,0,0,0.3);
 text-align:center;
-color:white;
+color:turquoise;
 }
 
 h2{
@@ -49,16 +47,15 @@ border:none;
 outline:none;
 }
 
-/* New Button Style */
+
 
 button{
 padding:9px 14px;
 margin:5px;
 border:none;
-border-radius:8px;
+box-sizing: border-box;
 cursor:pointer;
-background:linear-gradient(45deg,#4facfe,#00f2fe);
-color:white;
+background-color: chartreuse;
 font-weight:bold;
 transition:0.3s;
 }
@@ -69,12 +66,9 @@ box-shadow:0 5px 15px rgba(0,0,0,0.3);
 }
 
 
-#result{
-margin-top:15px;
-padding:10px;
-border-radius:8px;
-background:rgba(0,0,0,0.3);
-min-height:40px;
+
+#employees{
+color: black;
 }
 
 </style>
@@ -104,6 +98,12 @@ min-height:40px;
 <button onclick="countDept()">Count by Department</button>
 
 <div id="result"></div>
+<footer id="employees">
+@ 2026 Project | Made by <span class="myname">pradhuman bhardwaj</span><br>
+ADM NO; 2025B15410060 <br>
+ROLL NO; 2503215400122<br>
+CLASS ; CSE-DS-3
+</footer>
 
 </div>
 
@@ -199,10 +199,6 @@ document.getElementById("result").innerHTML=text;
 }
 
 </script>
-<footer>
-@ 2026 Project | Made by <span class="myname">pradhuman bhardwaj</span><br>
-ADM NO; 2025B15410060 <br>
-ROLL NO; 2503215400122
-</footer>
+
 </body>
 </html>

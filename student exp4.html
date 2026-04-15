@@ -8,7 +8,7 @@
 
 body{
 font-family:Arial;
-background:linear-gradient(135deg,#89f7fe,#66a6ff);
+background: yellow;
 height:100vh;
 display:flex;
 justify-content:center;
@@ -16,9 +16,9 @@ align-items:center;
 }
 
 .container{
-background:white;
+background: gray;
 padding:30px;
-border-radius:12px;
+box-sizing: border-box;
 width:350px;
 text-align:center;
 box-shadow:0 10px 20px rgba(0,0,0,0.2);
@@ -36,14 +36,14 @@ button{
 padding:10px 15px;
 border:none;
 border-radius:8px;
-background:#4facfe;
+background:#f90c0c;
 color:white;
 font-weight:bold;
 cursor:pointer;
 }
 
 button:hover{
-background:#00c6ff;
+background:#ec2607;
 }
 
 #result{
@@ -68,6 +68,11 @@ font-weight:bold;
 <button onclick="calculateResult()">Calculate Result</button>
 
 <div id="result"></div>
+<footer>
+@ 2026 Project | Made by <span class="myname">pradhuman bhardwaj</span><BR>
+ADM NO; 2025B15410060<BR>
+ROLL NO; 2503215400122
+</footer>
 
 </div>
 
@@ -128,11 +133,6 @@ document.getElementById("subjects").value="";
 
 
 </script>
-<footer>
-@ 2026 Project | Made by <span class="myname">pradhuman bhardwaj</span><BR>
-ADM NO; 2025B15410060<BR>
-ROLL NO; 2503215400122
-</footer>
 
 </body>
 </html>
