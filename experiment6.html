@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM Example</title>
+
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 0.4s;
+    }
+
+    .container {
+      text-align: center;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+      background-color: white;
+    }
+
+    h1 {
+      font-size: 32px;
+    }
+
+    p {
+      font-size: 18px;
+      margin-top: 20px;
+    }
+
+    button {
+      margin: 5px;
+      padding: 10px 15px;
+      border: none;
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1 id="heading">WELCOME TO JAVASCRIPT</h1>
+
+    <div>
+      <button id="bgBtn">Change Background</button>
+      <button id="resetBtn">Reset</button>
+      <button id="incBtn">Increase Font</button>
+      <button id="decBtn">Decrease Font</button>
+      <button id="toggleBtn">Show/Hide Paragraph</button>
+    </div>
+
+    <p id="para">
+      “JavaScript is a powerful scripting language that enables dynamic behavior and interactivity on web pages.”
+    </p>
+  </div>
+
+  <script>
+    // DOM select
+    let bgBtn = document.getElementById("bgBtn");
+    let resetBtn = document.getElementById("resetBtn");
+    let incBtn = document.getElementById("incBtn");
+    let decBtn = document.getElementById("decBtn");
+    let toggleBtn = document.getElementById("toggleBtn");
+
+    let heading = document.getElementById("heading");
+    let para = document.getElementById("para");
+
+    // Change Background
+    bgBtn.addEventListener("click", function() {
+      let randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
+      document.body.style.backgroundColor = randomColor;
+    });
+
+    // Reset
+    resetBtn.addEventListener("click", function() {
+      document.body.style.backgroundColor = "white";
+      heading.style.fontSize = "32px";
+      para.style.fontSize = "18px";
+      para.style.display = "block";
+    });
+
+    // Increase Font
+    incBtn.addEventListener("click", function() {
+      let hSize = window.getComputedStyle(heading).fontSize;
+      let pSize = window.getComputedStyle(para).fontSize;
+
+      heading.style.fontSize = (parseInt(hSize) + 2) + "px";
+      para.style.fontSize = (parseInt(pSize) + 2) + "px";
+    });
+
+    // Decrease Font
+    decBtn.addEventListener("click", function() {
+      let hSize = window.getComputedStyle(heading).fontSize;
+      let pSize = window.getComputedStyle(para).fontSize;
+
+      heading.style.fontSize = (parseInt(hSize) - 2) + "px";
+      para.style.fontSize = (parseInt(pSize) - 2) + "px";
+    });
+
+    // Show / Hide Paragraph
+    toggleBtn.addEventListener("click", function() {
+      if (para.style.display === "none") {
+        para.style.display = "block";
+      } else {
+        para.style.display = "none";
+      }
+    });
+  </script>
+
+</body>
+</html>
