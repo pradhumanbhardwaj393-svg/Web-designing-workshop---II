@@ -63,10 +63,16 @@
     <p id="para">
       “JavaScript is a powerful scripting language that enables dynamic behavior and interactivity on web pages.”
     </p>
+    <footer id="employees">
+@ 2026 Project | Made by <span class="myname">pradhuman bhardwaj</span><br>
+ADM NO; 2025B15410060 <br>
+ROLL NO; 2503215400122<br>
+CLASS ; CSE-DS-3
+</footer>
   </div>
 
   <script>
-    // DOM select
+   
     let bgBtn = document.getElementById("bgBtn");
     let resetBtn = document.getElementById("resetBtn");
     let incBtn = document.getElementById("incBtn");
@@ -76,13 +82,13 @@
     let heading = document.getElementById("heading");
     let para = document.getElementById("para");
 
-    // Change Background
+ 
     bgBtn.addEventListener("click", function() {
       let randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
       document.body.style.backgroundColor = randomColor;
     });
 
-    // Reset
+    
     resetBtn.addEventListener("click", function() {
       document.body.style.backgroundColor = "white";
       heading.style.fontSize = "32px";
@@ -90,7 +96,7 @@
       para.style.display = "block";
     });
 
-    // Increase Font
+   
     incBtn.addEventListener("click", function() {
       let hSize = window.getComputedStyle(heading).fontSize;
       let pSize = window.getComputedStyle(para).fontSize;
@@ -99,7 +105,7 @@
       para.style.fontSize = (parseInt(pSize) + 2) + "px";
     });
 
-    // Decrease Font
+  
     decBtn.addEventListener("click", function() {
       let hSize = window.getComputedStyle(heading).fontSize;
       let pSize = window.getComputedStyle(para).fontSize;
@@ -108,7 +114,7 @@
       para.style.fontSize = (parseInt(pSize) - 2) + "px";
     });
 
-    // Show / Hide Paragraph
+   
     toggleBtn.addEventListener("click", function() {
       if (para.style.display === "none") {
         para.style.display = "block";
