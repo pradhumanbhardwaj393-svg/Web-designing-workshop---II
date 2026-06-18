@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Marks and Grade Calculator</title>
+</head>
+<body>
+
+    <h2>Student Marks and Grade Calculator</h2>
+
+    Enter Number of Subjects:
+    <input type="number" id="sub">
+    <button onclick="calculate()">Calculate</button>
+
+    <p id="output"></p>
+
+    <script>
+        function calculate() {
+
+            let n = parseInt(document.getElementById("sub").value);
+
+            let total = 0;
+            let pass = true;
+
+            for(let i = 1; i <= n; i++) {
+
+                let marks = parseInt(prompt("Enter Marks of Subject " + i));
+
+                total = total + marks;
+
+                if(marks < 35) {
+                    pass = false;
+                }
+            }
+
+            let avg = total / n;
+
+            let grade;
+
+            if(avg >= 90)
+                grade = "A+";
+            else if(avg >= 80)
+                grade = "A";
+            else if(avg >= 70)
+                grade = "B";
+            else if(avg >= 60)
+                grade = "C";
+            else if(avg >= 50)
+                grade = "D";
+            else
+                grade = "F";
+
+            let result;
+
+            if(pass)
+                result = "PASS";
+            else
+                result = "FAIL";
+
+            document.getElementById("output").innerHTML =
+                "<h3>Result</h3>" +
+                "Total Marks = " + total + "<br>" +
+                "Average = " + avg + "<br>" +
+                "Grade = " + grade + "<br>" +
+                "Result = " + result;
+        }
+    </script>
+
+</body>
+</html>
